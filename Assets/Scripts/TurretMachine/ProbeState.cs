@@ -27,7 +27,7 @@ public class ProbeState : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if(visionController.SeePlayer(out hit, true)){
+        if(visionController.SeePlayer(out hit)){
             stateMachine.ActivateState(stateMachine.searchState);
             return;
         }

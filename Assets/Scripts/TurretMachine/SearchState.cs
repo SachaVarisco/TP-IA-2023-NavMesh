@@ -9,7 +9,7 @@ public class SearchState : MonoBehaviour
 
     private TurretStateMachine stateMachine;
     private VisionController visionController;
-    private float setTime = 2;
+    private float setTime = 0.5f;
     private float currentTime;
 
     // Start is called before the first frame update

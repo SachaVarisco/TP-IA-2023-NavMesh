@@ -30,6 +30,7 @@ public class player : MonoBehaviour
     {    
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
+    
 
         if (hor != 0 || ver != 0)
         {

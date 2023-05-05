@@ -17,13 +17,14 @@ public class VisionController : MonoBehaviour
   
     public bool SeePlayer(out RaycastHit hit, bool seePlayer = false){
         Vector3 direction;
-        if(seePlayer){
+        direction = eyes.forward;
+        if(seePlayer == true){
             direction = (player.position + offset) - eyes.position;
         } else
         {
             direction = eyes.forward;
         }
-        
+        Debug.DrawRay(eyes.position, direction, Color.red);
         return Physics.Raycast(eyes.position, direction, out hit, visionRange) && hit.collider.CompareTag("Player");
     }
 }

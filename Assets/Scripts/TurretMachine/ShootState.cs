@@ -29,10 +29,7 @@ public class ShootState : MonoBehaviour
             Shoot();
             fire = false;
         };
-    
         stateMachine.ActivateState(stateMachine.probeState);
-        
-
     }
   
     void Shoot(){
